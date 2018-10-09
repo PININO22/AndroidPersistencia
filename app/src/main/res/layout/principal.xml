@@ -6,7 +6,7 @@
 
 
     <TextView
-        android:id="@id/nombre"
+        android:id="@+id/nombre"
         android:text="Nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@id/tvapellido"
+        android:id="@+id/tvapellido"
         android:text="Apellido"
         android:layout_alignBottom="@id/etapellido"
         android:layout_alignParentLeft="true"
@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Telefono"
-        android:id="@id/tvtelefono"
+        android:id="@+id/tvtelefono"
         android:layout_marginTop="29dp"
         android:layout_below="@id/etapellido"
 
@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="30"
-        android:id="@id/etNombre"
+        android:id="@+id/etNombre"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="+@id/tvtelefono"
         android:layout_marginLeft="30dp"
@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="20"
-        android:id="@id/etapellido"
+        android:id="@+id/etapellido"
         android:layout_below="+@id/etnombre"
         android:layout_alignLeft="+@id/etnombre"
         android:layout_alginStart="+@id/etnombre"
@@ -62,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
-        android:id="@id/ettelefono"
+        android:id="@+id/ettelefono"
         android:layout_below="+@id/tvtelefono"
         android:layout_alignLeft="+@id/etapellido"
         android:layout_alginStart="+@id/etapellido"
@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Guardar"
-        android:id="@id/btguardar"
+        android:id="@+id/btguardar"
         android:layout_below="+@id/ettelefono"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
