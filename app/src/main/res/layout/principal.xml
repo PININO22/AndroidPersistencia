@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="30"
-        android:id="@+id/etNombre"
+        android:id="@+id/etnombre"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="+@id/tvtelefono"
         android:layout_marginLeft="30dp"
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:ems="20"
         android:id="@+id/etapellido"
-        android:layout_below="+@id/etnombre"
+        android:layout_below="@+id/etnombre"
         android:layout_alignLeft="+@id/etnombre"
         android:layout_alginStart="+@id/etnombre"
 

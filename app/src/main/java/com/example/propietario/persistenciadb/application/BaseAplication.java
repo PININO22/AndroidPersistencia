@@ -3,6 +3,8 @@ package com.example.propietario.persistenciadb.application;
 import android.app.Application;
 import android.database.Cursor;
 
+import com.example.propietario.persistenciadb.adapter.DBAdapter;
+
 import java.util.ArrayList;
 
 import javax.crypto.AEADBadTagException;
@@ -28,7 +30,7 @@ public class BaseAplication extends Application {
 
     public void rellenarDatosTabla1(){
 
-        if(dbAdapter.cliente1IsEmpty()){
+        if(dbAdapter.clienteIsEmpty()){
             for(int i=0; i<30;i++){
 
                 String nombre= "nombre"+ String.valueOf(i);

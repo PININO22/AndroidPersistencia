@@ -1,4 +1,4 @@
-package com.example.propietario.persistenciadb.application;
+package com.example.propietario.persistenciadb;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.propietario.persistenciadb.application.BaseAplication;
+
 public class Principal extends AppCompatActivity {
     private EditText nombre;
     private EditText apellido;
@@ -19,12 +21,12 @@ public class Principal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_principal);
+        setContentView(R.layout.principal);
         nombre=(EditText) findViewById(R.id.etnombre);
         apellido=(EditText) findViewById(R.id.etapellido);
         telefono= (EditText) findViewById(R.id.ettelefono);
 
-        guardar=(Button) findViewById(R.id.btnguardar);
+        guardar=(Button) findViewById(R.id.btguardar);
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,22 +36,5 @@ public class Principal extends AppCompatActivity {
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        getMenuInflater().inflate(R.menu.menu_principal, menu);
-        return true;
-
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id= item.getItemId();
-        if(id==R.id.action_settings){
-
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
+    
 }

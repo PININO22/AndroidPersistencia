@@ -18,7 +18,7 @@ public class ListActivity extends AppCompatActivity {
         setContentView(R.layout.lista);
         lista=(TextView)findViewById(R.id.tvlista);
 
-        for(String it:((BaseAplication)getApplication()).nombreClientes()){
+        for(String it:((BaseAplication)getApplication()).nombresClientes()){
             lista.setText(lista.getText()+it);
         }
     }
